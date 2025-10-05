@@ -28,3 +28,6 @@ jobs:
     connection-string: ${{ secrets.SQL_CONNECTION_STRING }}
     action: 'publish'
     path: 'bin/Staff/Staff.dacpac'
+
+
+    
