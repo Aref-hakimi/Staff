@@ -25,7 +25,7 @@ jobs:
       - name: Deploy
   uses: azure/sql-action@v2
   with:
-    connection-string: ${{ Data Source=AREF;Initial Catalog=Member;Integrated Security=True;Connect Timeout=60;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False}}
+    connection-string: ${{ Data Source=AREF;Initial Catalog=Member;Integrated Security=True;Connect Timeout=60;Encrypt=True;TrustServerCertificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False}}
     action: 'publish'
     path: 'bin/Staff/Staff.dacpac'
 
